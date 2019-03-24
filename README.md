@@ -1,2 +1,3 @@
 # TodoList
-TodoList Project
+This project is TodoList Project
+Test and Learn it
