@@ -3,14 +3,15 @@ import PageTemplate from './PageTemplate';
 import TodoList from './TodoList'
 import TodoInput from './TodoInput';
 
+const initialTodos = new Array(500).fill(0).map((foo,index) => ({id:index, text:`일정 ${index}`,done:false}));
+
 class App extends Component {
+
+
     state = {
         input: ' ', //input value
         //일정 데이터 초깃값
-        todos:[
-            {id:0, text:'리액트 공부하기',done:true},
-            {id:1, text:'컴포넌트 스타일링 해보기',done:false}
-        ]
+        todos:initialTodos
     }
 
     id=1;
